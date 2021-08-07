@@ -1,5 +1,6 @@
 /// <reference types="cypress" />
 import { _URLS } from '../../constants';
+import { terminalLog } from '../../helpers';
 
 describe('Test Automation University Applitools', () => {
   context('Learning paths endpoint', () => {
@@ -20,6 +21,17 @@ describe('Test Automation University Applitools', () => {
       cy.checkA11y(null, {
         includedImpacts: ['critical'],
       });
+    });
+
+    it('should log in terminal only the critical & serious accessibility issues if present on the page', () => {
+      // run `npm run cyr` command in order to see the outcome
+      cy.checkA11y(
+        null,
+        {
+          includedImpacts: ['critical', 'serious'],
+        },
+        terminalLog
+      );
     });
   });
 });
