@@ -1,3 +1,4 @@
+/// <reference types="cypress" />
 import { _URLS } from '../../constants';
 
 describe('Test Automation University Applitools', () => {
