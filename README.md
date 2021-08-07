@@ -1,4 +1,6 @@
-# Automation Project For Accessibility Testing Using Cypress And Axe
+<h1 align="center">Automation Project For Accessibility Testing Using Cypress And Axe </h1>
+
+<img src="./images/cyAxe.png" alt="project image" width="400" height="300">
 
 ## Summary
 
