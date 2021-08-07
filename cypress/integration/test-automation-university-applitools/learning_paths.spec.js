@@ -4,7 +4,7 @@ import { terminalLog } from '../../helpers';
 
 describe('Test Automation University Applitools', () => {
   context('Learning paths endpoint', () => {
-    beforeEach(() => {
+    before(() => {
       cy.visit(_URLS.TEST_AUTOMATION_UNIVERSITY.LEARNING_PATHS);
       cy.injectAxe();
     });
