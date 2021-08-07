@@ -4,12 +4,14 @@
   "description": "Automation testing project for accessibility using Cypress and Axe",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cyr": "cypress run",
+    "cyo": "cypress open"
   },
   "keywords": [],
   "author": "Kolyo Kolev",
   "license": "ISC",
   "devDependencies": {
+    "axe-core": "^4.3.2",
     "cypress": "^8.2.0",
     "cypress-axe": "^0.12.2"
   }
