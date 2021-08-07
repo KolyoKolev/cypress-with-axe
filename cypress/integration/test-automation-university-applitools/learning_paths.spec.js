@@ -7,5 +7,11 @@ describe('Test Automation University Applitools', () => {
       cy.injectAxe();
       cy.checkA11y();
     });
+
+    it('should log all accessibility issues on a single DOM element if the formar are present', () => {
+      cy.visit(_URLS.TEST_AUTOMATION_UNIVERSITY.LEARNING_PATHS);
+      cy.injectAxe();
+      cy.checkA11y('img');
+    });
   });
 });
