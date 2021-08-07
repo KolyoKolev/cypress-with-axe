@@ -1,12 +1,16 @@
 {
   "name": "cypress-with-axe",
   "version": "1.0.0",
-  "description": "Automation testing project for accessability using Cypress and Axe",
+  "description": "Automation testing project for accessibility using Cypress and Axe",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Kolyo Kolev",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^8.2.0",
+    "cypress-axe": "^0.12.2"
+  }
 }
