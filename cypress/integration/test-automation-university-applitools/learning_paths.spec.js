@@ -13,5 +13,13 @@ describe('Test Automation University Applitools', () => {
       cy.injectAxe();
       cy.checkA11y('img');
     });
+
+    it('should log only the critical accessibility issues if present on the page', () => {
+      cy.visit(_URLS.TEST_AUTOMATION_UNIVERSITY.LEARNING_PATHS);
+      cy.injectAxe();
+      cy.checkA11y(null, {
+        includedImpacts: ['critical'],
+      });
+    });
   });
 });
